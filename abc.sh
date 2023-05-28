@@ -1,1 +1,2 @@
-abc
+#!/bin/bash
+echo "Test"
