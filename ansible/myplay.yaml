@@ -1,0 +1,6 @@
+---
+  - hosts: all
+    tasks: 
+      - name: "SampleTask"
+        apt: kafka
+        status: present
