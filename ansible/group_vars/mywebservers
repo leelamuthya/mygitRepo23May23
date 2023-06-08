@@ -1,3 +1,4 @@
 ---
 myvar: value
 mywebpackforubuntu: apache2
+myjavapackonubuntu: openjdk-8-jre
