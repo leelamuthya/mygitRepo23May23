@@ -1,7 +1,0 @@
----
-- hosts: all
-  tasks:
-    - name: I want to install webserver on nodes
-      apt:
-         name: apache2
-         state: present
