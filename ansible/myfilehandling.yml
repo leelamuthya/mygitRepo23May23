@@ -6,5 +6,17 @@
   - name: i want to install webserver
     apt: 
       name: apache2
-
+  - name: copy index file into node side
+    copy:
+      src: myindexfile
+      dest: /var/www/html/index.html
  
+  - name: I want to download internet files
+    get_url:
+      url: https://archive.apache.org/dist/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz
+      dest: /home/ubuntu/apache-tomcat-10.0.20.tar.gz
+      force_basic_auth: yes
+  - name: I want to copy dynamic file into nodes
+    template: 
+      src: myindex.j2
+      dest: /var/www/html/index.html
